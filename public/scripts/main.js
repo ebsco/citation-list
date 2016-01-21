@@ -2,12 +2,10 @@
 import React from 'react';
 /*eslint-enable no-unused-vars*/
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import App from './components/App';
-import { Router, Route, IndexRoute } from 'react-router';
 
-import { createStore, compose, applyMiddleware } from 'redux';
-import reducer from './reducers/reducer';
+// Containers
+import { Provider } from 'react-redux';
+import App from './containers/App';
 
 // Redux Devtools
 import {createDevTools} from 'redux-devtools';
@@ -20,6 +18,8 @@ const DevTools = createDevTools(
 );
 
 // Redux Store setup
+import { createStore, compose, applyMiddleware } from 'redux';
+import reducer from './reducers/reducer';
 const finalCreateStore = compose(
   applyMiddleware(
     // MIDDLEWARES GO 'ERE
@@ -30,6 +30,7 @@ const finalCreateStore = compose(
 const store = finalCreateStore(reducer);
 
 // Routing
+import { Router, Route, IndexRoute } from 'react-router';
 import createBrowserHistory from 'history/lib/createBrowserHistory';
 const history = createBrowserHistory();
 const router = (
