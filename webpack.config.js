@@ -1,7 +1,11 @@
+var path = require('path');
+
 module.exports = {
-	entry: './public/scripts/main.js',
+	entry: ['./public/scripts/main'],
 	output: {
-		filename: 'build/bundle.js'
+		path: path.resolve(__dirname, 'dist'),
+		publicPath: '/dist/',
+		filename: 'bundle.js'
 	},
 	module: {
 		loaders: [
