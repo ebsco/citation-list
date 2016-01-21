@@ -16,7 +16,7 @@ var store = createStore(reducer);
 
 ReactDOM.render(
   <Provider store={store}>
-    <App className='foo' />
+    <App />
   </Provider>,
   document.getElementById('app')
 );
