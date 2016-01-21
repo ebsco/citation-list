@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 
 const CitationListToolbar = (props) => (
   <div>
-    <Link to={"/"}>Return to Result List</Link>
+    <Link to="/">Return to Result List</Link>
   </div>
 )
 
