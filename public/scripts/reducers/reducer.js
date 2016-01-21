@@ -1,17 +1,19 @@
-import { UPDATE_TEXT } from '../actions/actions';
+import { UPDATE_RANGE } from '../actions/actions';
 import data from './data.json';
 
 const initialState = {
-  text: '',
+  rangeStart: 1,
+  rangeEnd: 10,
   dummyData: data
 };
 
 export default function (state = initialState, action) {
   switch(action.type) {
-  case UPDATE_TEXT:
+  case UPDATE_RANGE:
     return {
       ...state,
-      text: action.text
+      rangeStart: action.payload.rangeStart,
+      rangeEnd: action.payload.rangeEnd
     };
   default:
     return state;
