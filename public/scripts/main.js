@@ -4,6 +4,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import App from './components/App';
+import { Router, Route, IndexRoute } from 'react-router';
 
 import { createStore, compose, applyMiddleware } from 'redux';
 import reducer from './reducers/reducer';
@@ -12,13 +13,13 @@ import reducer from './reducers/reducer';
 import {createDevTools} from 'redux-devtools';
 import LogMonitor from 'redux-devtools-log-monitor';
 import DockMonitor from 'redux-devtools-dock-monitor';
-
 const DevTools = createDevTools(
 	<DockMonitor toggleVisibilityKey="ctrl-h" changePositionKey="ctrl-q">
 		<LogMonitor theme="tomorrow" />
 	</DockMonitor>
 );
 
+// Redux Store setup
 const finalCreateStore = compose(
 	applyMiddleware(
 		// MIDDLEWARES GO 'ERE
@@ -28,13 +29,22 @@ const finalCreateStore = compose(
 
 const store = finalCreateStore(reducer);
 
-// import { updateText } from './actions/actions.js';
-// store.dispatch(updateText('ahoy!'));
+// Routing
+import createBrowserHistory from 'history/lib/createBrowserHistory';
+const history = createBrowserHistory();
+const router = (
+	<Router history={ history }>
+		<Route path="/">
+			<IndexRoute component={App} />
+		</Route>
+	</Router>
+);
 
+// Root component
 const Main = (
 	<Provider store={store}>
 		<div>
-			<App className='foo' />
+			{ router }
 			<DevTools />
 		</div>
 	</Provider>
