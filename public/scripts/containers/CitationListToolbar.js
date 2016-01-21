@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 
 import { Link } from 'react-router';
 
-const ResultListToolbar = (props) => (
+const CitationListToolbar = (props) => (
   <div>
-    <Link to="/citation-list">Get Citations</Link>
+    <Link to="/">Return to Result List</Link>
   </div>
 )
 
-export default ResultListToolbar;
+export default CitationListToolbar;

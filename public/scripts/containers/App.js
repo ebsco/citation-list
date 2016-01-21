@@ -7,7 +7,7 @@ import ResultListPage from './ResultListPage';
 
 const App = (props) => (
   <div className={props.className}>
-    <ResultListPage />
+    <ResultListPage params={props.params} />
   </div>
 )
 
