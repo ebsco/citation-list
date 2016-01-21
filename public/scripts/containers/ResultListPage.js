@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 
 import ResultListToolbar from './ResultListToolbar';
-import ResultList from './ResultList';
+import ResultList from '../components/ResultList';
 
 
 const ResultListPage = (props) => (
