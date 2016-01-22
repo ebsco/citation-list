@@ -25,6 +25,9 @@ const ConnectedResultsToolbar = connect((state) => ({
   rangeStart: state.rangeStart,
   rangeEnd: state.rangeEnd
 }))(ResultListToolbar);
+const ConnectedCitationListToolbar = connect((state) => ({
+  citations: state.citations
+}))(CitationListToolbar);
 
 export default class ResultListPage extends Component {
   render() {
@@ -32,7 +35,7 @@ export default class ResultListPage extends Component {
       layout;
     if (mode === 'citation-list') {
       layout = [
-        <CitationListToolbar />,
+        <ConnectedCitationListToolbar />,
         <ConnectedCitationList citations={true} />,
         <ConnectedResultList editing={mode === 'citation-list'}/>
       ];
