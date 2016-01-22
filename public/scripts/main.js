@@ -37,6 +37,7 @@ const router = (
   <Router history={ history }>
     <Route path="/">
       <IndexRoute component={App} />
+      <Route path=":mode" component={App} />
     </Route>
   </Router>
 );
