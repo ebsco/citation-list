@@ -2,18 +2,22 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+import { addCitation } from '../actions/actions.js'
+
 import ResultListToolbar from './ResultListToolbar';
 import CitationListToolbar from './CitationListToolbar';
 import ResultList from '../components/ResultList';
 
 
 const ConnectedList = connect((state) => ({
-  items: state.dummyData,
+  items: state.uncited,
   rangeStart: state.rangeStart,
   rangeEnd: state.rangeEnd
+}), (dispatch) => ({
+  cite: (item) => dispatch(addCitation(item))
 }))(ResultList);
 const ConnectedResultsToolbar = connect((state) => ({
-  totalCount: state.dummyData.length,
+  totalCount: state.uncited.length,
   rangeStart: state.rangeStart,
   rangeEnd: state.rangeEnd
 }))(ResultListToolbar);
