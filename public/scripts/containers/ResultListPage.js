@@ -12,20 +12,26 @@ const ConnectedList = connect((state) => ({
   rangeStart: state.rangeStart,
   rangeEnd: state.rangeEnd
 }))(ResultList);
+const ConnectedResultsToolbar = connect((state) => ({
+  totalCount: state.dummyData.length,
+  rangeStart: state.rangeStart,
+  rangeEnd: state.rangeEnd
+}))(ResultListToolbar);
 
 export default class ResultListPage extends Component {
   render() {
     let toolbar;
-    if (this.props.params.mode === 'citation-list') {
+    let mode = this.props.params.mode;
+    if (mode === 'citation-list') {
       toolbar = <CitationListToolbar />;
     }
     else {
-      toolbar = <ResultListToolbar />;
+      toolbar = <ConnectedResultsToolbar />;
     }
     return (
-      <div className={this.props.className}>
+      <div>
         {toolbar}
-        <ConnectedList />
+        <ConnectedList editing={mode === 'citation-list'}/>
       </div>
     );
   }

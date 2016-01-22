@@ -4,19 +4,14 @@ import React, { Component } from 'react';
 
 const ResultItem = (props) => (
   <li>
-    <span>
-      {props.index + '.'}
-    </span>
+    <h3>
+      {props.data.title}
+    </h3>
     <div>
-      <h3>
-        {props.data.title}
-      </h3>
-      <div>
-        <img src={props.data.img} />
-      </div>
-      <p>{props.data.author}</p>
-      <p>{props.data.description}</p>
+      <img src={props.data.img} />
     </div>
+    <p>{props.data.author}</p>
+    <p>{props.data.description}</p>
   </li>
 )
 
