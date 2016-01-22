@@ -9,7 +9,10 @@ import CitationListToolbar from './CitationListToolbar';
 import ResultList from '../components/ResultList';
 
 
-const ConnectedList = connect((state) => ({
+const ConnectedCitationList = connect((state) => ({
+  items: state.citations
+}))(ResultList);
+const ConnectedResultList = connect((state) => ({
   items: state.uncited,
   rangeStart: state.rangeStart,
   rangeEnd: state.rangeEnd
@@ -24,18 +27,24 @@ const ConnectedResultsToolbar = connect((state) => ({
 
 export default class ResultListPage extends Component {
   render() {
-    let toolbar;
-    let mode = this.props.params.mode;
+    let mode = this.props.params.mode,
+      layout;
     if (mode === 'citation-list') {
-      toolbar = <CitationListToolbar />;
+      layout = [
+        <CitationListToolbar />,
+        <ConnectedCitationList />,
+        <ConnectedResultList editing={mode === 'citation-list'}/>
+      ];
     }
     else {
-      toolbar = <ConnectedResultsToolbar />;
+      layout = [
+        <ConnectedResultsToolbar />,
+        <ConnectedResultList />
+      ];
     }
     return (
       <div>
-        {toolbar}
-        <ConnectedList editing={mode === 'citation-list'}/>
+        {layout}
       </div>
     );
   }
