@@ -2,3 +2,7 @@
   list-style-type: none;
   padding: 0;
 }
+
+.result-list__bottom-border {
+  border-bottom: 2px solid #bbb;
+}

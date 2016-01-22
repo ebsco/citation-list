@@ -1,5 +1,6 @@
 import {
   UPDATE_RANGE,
+  HIDE_RECORD,
   ADD_CITATION,
   REMOVE_CITATION,
   CLEAR_CITATIONS
@@ -22,6 +23,16 @@ export default function (state = initialState, action) {
       rangeStart: action.payload.rangeStart,
       rangeEnd: action.payload.rangeEnd
     };
+  case HIDE_RECORD: {
+    let citation = action.payload.citation,
+      index = state.uncited.indexOf(citation),
+      uncited = [...state.uncited];
+    uncited.splice(index,1);
+    return {
+      ...state,
+      uncited
+    };
+  }
   case ADD_CITATION: {
     let citation = action.payload.citation,
       index = state.uncited.indexOf(citation),

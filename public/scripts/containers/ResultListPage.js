@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import { addCitation } from '../actions/actions.js'
+import { hideRecord, addCitation } from '../actions/actions.js'
 
 import ResultListToolbar from './ResultListToolbar';
 import CitationListToolbar from './CitationListToolbar';
@@ -17,7 +17,8 @@ const ConnectedResultList = connect((state) => ({
   rangeStart: state.rangeStart,
   rangeEnd: state.rangeEnd
 }), (dispatch) => ({
-  cite: (item) => dispatch(addCitation(item))
+  cite: (item) => dispatch(addCitation(item)),
+  hide: (item) => dispatch(hideRecord(item))
 }))(ResultList);
 const ConnectedResultsToolbar = connect((state) => ({
   totalCount: state.uncited.length,
@@ -35,7 +36,7 @@ export default class ResultListPage extends Component {
     if (mode === 'citation-list') {
       layout = [
         <ConnectedCitationListToolbar />,
-        <ConnectedCitationList />,
+        <ConnectedCitationList citations={true} />,
         <ConnectedResultList editing={mode === 'citation-list'}/>
       ];
     }
