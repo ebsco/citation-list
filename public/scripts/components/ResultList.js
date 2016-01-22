@@ -13,7 +13,7 @@ export default class ResultList extends Component {
       if (this.props.editing) {
         markup = (
           <div>
-            <button onClick={() => this.props.cite(item)}>Hide</button>
+            <button onClick={() => this.props.cite(item)}>Cite Record</button>
             <ResultItem data={item} />
           </div>
         );
