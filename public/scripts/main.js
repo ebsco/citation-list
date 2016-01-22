@@ -31,13 +31,15 @@ const store = finalCreateStore(reducer);
 
 // Routing
 import { Router, Route, IndexRoute } from 'react-router';
+import { clearCitations } from './actions/actions';
 import createBrowserHistory from 'history/lib/createBrowserHistory';
 const history = createBrowserHistory();
+const dispatchClear = () => store.dispatch(clearCitations());
 const router = (
   <Router history={ history }>
     <Route path="/">
-      <IndexRoute component={App} />
-      <Route path=":mode" component={App} />
+      <IndexRoute component={App} onEnter={dispatchClear} />
+      <Route path=":mode" component={App}/>
     </Route>
   </Router>
 );
