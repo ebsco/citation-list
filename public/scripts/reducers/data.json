@@ -1,51 +1,61 @@
 [{
+	"id": 1,
+	"title": "Cats",
+	"author": "O'Neill, Amanda",
+	"description": "Surveys the breeding, care, evolution, behavior, mythology, and domestication of cats.",
+	"img": "http://contentcafe2.btol.com/ContentCafe/jacket.aspx?UserID=ebsco-test&Password=ebsco-test&Return=T&Type=S&Value=0753451131"
+},{
+	"id": 2,
+	"title": "Cats",
+	"author": "Gibbons, Gail",
+	"description": "Presents information about the physical characteristics, senses, and behavior of cats, as well as how to care for these animals and some general facts about them.",
+	"img": "http://contentcafe2.btol.com/ContentCafe/jacket.aspx?UserID=ebsco-test&Password=ebsco-test&Return=T&Type=S&Value=0823412539"
+},{
+	"id": 3,
+	"title": "Your Ideal Cat : Insights Into Breed and Gender Differences in Cat Behavior",
+	"author": "Hart, Benjamin L.",
+	"description": "For a happy relationship with your cat, go beyond the looks and make your pick based on demonstrated breed behavior. This is the advice of the Harts, two experts in animal communication and behav...",
+	"img": "http://rps2images.ebscohost.com/rpsweb/othumb?id=NL$553268$PDF&s=r"
+},{
+	"id": 4,
+	"title": "The Photographed Cat : Picturing Human-feline Ties, 1890-1940",
+	"author": "Arluke, Arnold",
+	"description": "The Photographed Cat presents readers with an examination of how human-cat relationships are depicted in early twentieth-century photography. Examining this relationship from the perspective of t...",
+	"img": "http://rps2images.ebscohost.com/rpsweb/othumb?id=NL$714488$PDF&s=r"
+},{
+	"id": 5,
+	"title": "Cat Telling Tales",
+	"author": "Murphy, Shirley Rousseau",
+	"description": "Even the bright seaside village of Molena Point has been hit hard by the economic downturn. Sadly, former residents haven't just left their homes; they've abandoned their pets, too. Luckily, Joe ...",
+	"img": "http://rps2images.ebscohost.com/rpsweb/othumb?id=NL$465800$CVR&s=r"
+},{
+	"id": 6,
 	"title": "Cats: biology, behavior and health disorders",
 	"author": "Zakrevsky, Taniyah",
 	"description": "",
 	"img": "http://contentcafe2.btol.com/ContentCafe/jacket.aspx?UserID=ebsco-test&Password=ebsco-test&Return=T&Type=S&Value=9781620810439"
 },{
-	"title": "Cats: biology, behavior and health disorders",
-	"author": "Zakrevsky, Taniyah",
-	"description": "",
-	"img": "http://contentcafe2.btol.com/ContentCafe/jacket.aspx?UserID=ebsco-test&Password=ebsco-test&Return=T&Type=S&Value=9781620810439"
+	"id": 7,
+	"title": "For the Love of Cats : Amazing True Stories of Cats and the People Who Love Them",
+	"author": "Becker, Marty",
+	"description": "The closer we get to our cats (or the closer they let us get to them!), the more we find to love about them. For the Love of Cats celebrates this complex bond, revealing, with heart-tugging emoti...",
+	"img": "http://rps2images.ebscohost.com/rpsweb/othumb?id=NL$636165$EPUB&s=r"
 },{
-	"title": "Cats: biology, behavior and health disorders",
-	"author": "Zakrevsky, Taniyah",
-	"description": "",
-	"img": "http://contentcafe2.btol.com/ContentCafe/jacket.aspx?UserID=ebsco-test&Password=ebsco-test&Return=T&Type=S&Value=9781620810439"
+	"id": 8,
+	"title": "Three Wise Cats : A Christmas Story",
+	"author": "Konstantelos, Harold M.",
+	"description": "'Three Wise Cats is an inspirational tale about three cats and their journey to witness the first Christmas. The old Siamese Ptolemy was alongside his master when a star of unusual brightness was...",
+	"img": "http://rps2images.ebscohost.com/rpsweb/othumb?id=NL$294910$CVR&s=r"
 },{
-	"title": "Cats: biology, behavior and health disorders",
-	"author": "Zakrevsky, Taniyah",
-	"description": "",
-	"img": "http://contentcafe2.btol.com/ContentCafe/jacket.aspx?UserID=ebsco-test&Password=ebsco-test&Return=T&Type=S&Value=9781620810439"
+	"id": 9,
+	"title": "Cognitive Visual Memory in Cats",
+	"author": "Okudzhava, V. M.",
+	"description": "The role of cognitive memory in “becoming” of the complexly organized systems is briefly considered from the viewpoint of the general systems theory; the role of Georgian neurophysiologists in em...",
+	"img": "http://rps2images.ebscohost.com/rpsweb/othumb?id=NL$389166$PDF&s=r"
 },{
-	"title": "Cats: biology, behavior and health disorders",
-	"author": "Zakrevsky, Taniyah",
-	"description": "",
-	"img": "http://contentcafe2.btol.com/ContentCafe/jacket.aspx?UserID=ebsco-test&Password=ebsco-test&Return=T&Type=S&Value=9781620810439"
-},{
-	"title": "Cats: biology, behavior and health disorders",
-	"author": "Zakrevsky, Taniyah",
-	"description": "",
-	"img": "http://contentcafe2.btol.com/ContentCafe/jacket.aspx?UserID=ebsco-test&Password=ebsco-test&Return=T&Type=S&Value=9781620810439"
-},{
-	"title": "Cats: biology, behavior and health disorders",
-	"author": "Zakrevsky, Taniyah",
-	"description": "",
-	"img": "http://contentcafe2.btol.com/ContentCafe/jacket.aspx?UserID=ebsco-test&Password=ebsco-test&Return=T&Type=S&Value=9781620810439"
-},{
-	"title": "Cats: biology, behavior and health disorders",
-	"author": "Zakrevsky, Taniyah",
-	"description": "",
-	"img": "http://contentcafe2.btol.com/ContentCafe/jacket.aspx?UserID=ebsco-test&Password=ebsco-test&Return=T&Type=S&Value=9781620810439"
-},{
-	"title": "Cats: biology, behavior and health disorders",
-	"author": "Zakrevsky, Taniyah",
-	"description": "",
-	"img": "http://contentcafe2.btol.com/ContentCafe/jacket.aspx?UserID=ebsco-test&Password=ebsco-test&Return=T&Type=S&Value=9781620810439"
-},{
-	"title": "Cats: biology, behavior and health disorders",
-	"author": "Zakrevsky, Taniyah",
-	"description": "",
-	"img": "http://contentcafe2.btol.com/ContentCafe/jacket.aspx?UserID=ebsco-test&Password=ebsco-test&Return=T&Type=S&Value=9781620810439"
+	"id": 10,
+	"title": "Why Cats Land on Their Feet, and 76 Other Paradoxes and Puzzles in Physics",
+	"author": "Levi, Mark",
+	"description": "Ever wonder why cats land on their feet? Or what holds a spinning top upright? Or whether it is possible to feel the Earth's rotation in an airplane? Why Cats Land on Their Feet is a compendium o...",
+	"img": "http://rps2images.ebscohost.com/rpsweb/othumb?id=NL$442939$EPUB&s=r"
 }]
