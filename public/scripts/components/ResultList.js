@@ -1,6 +1,8 @@
 /*eslint-disable no-unused-vars*/
 import React, { Component } from 'react';
 
+import './ResultList.css';
+
 import ResultItem from './ResultItem';
 
 
@@ -23,7 +25,7 @@ export default class ResultList extends Component {
       return markup;
     });
     return (
-      <ul>
+      <ul className="result-list">
         {children}
       </ul>
     );

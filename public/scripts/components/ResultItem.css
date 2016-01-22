@@ -1,0 +1,28 @@
+.result-item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.result-item:not(:last-child) {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.result-item__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #005bc6;
+  line-height: 1.4;
+  font-size: -20px;
+}
+
+.result-item__subheading {
+  color: #666;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.result-item__description {
+  color: #333;
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
