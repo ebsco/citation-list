@@ -1,9 +1,12 @@
-export const UPDATE_TEXT = 'UPDATE_TEXT';
+export const UPDATE_RANGE = 'UPDATE_RANGE';
 
 
-export function updateText(text) {
+export function updateRange(start, end) {
   return {
-    type: UPDATE_TEXT,
-    text: text
+    type: UPDATE_RANGE,
+    payload: {
+      rangeStart: start,
+      rangeEnd: end
+    }
   };
 }
