@@ -28,7 +28,7 @@ export default class ResultList extends Component {
       return markup;
     });
     return (
-      <ul className={"result-list " + hasCitations}>
+      <ul className={'result-list ' + hasCitations}>
         {children}
       </ul>
     );
