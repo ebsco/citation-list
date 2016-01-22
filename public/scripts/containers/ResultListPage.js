@@ -21,13 +21,16 @@ const ConnectedResultsToolbar = connect((state) => ({
   rangeStart: state.rangeStart,
   rangeEnd: state.rangeEnd
 }))(ResultListToolbar);
+const ConnectedCitationListToolbar = connect((state) => ({
+  citations: state.citations
+}))(CitationListToolbar);
 
 export default class ResultListPage extends Component {
   render() {
     let toolbar;
     let mode = this.props.params.mode;
     if (mode === 'citation-list') {
-      toolbar = <CitationListToolbar />;
+      toolbar = <ConnectedCitationListToolbar />;
     }
     else {
       toolbar = <ConnectedResultsToolbar />;
